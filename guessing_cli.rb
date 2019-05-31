@@ -5,13 +5,10 @@ def run_guessing_game
       guess = gets.chomp
       computer_number = rand(1..6)
     if guess.to_i == computer_number
-          puts "You guessed the correct number!"
-        elsif guess.to_i != computer_number
-          puts "The computer guessed #{computer_number}."
-        else
-          puts "Invalid input"
-        end
-      end
+      puts "You guessed the correct number!"
+    elsif guess.to_i != computer_number
+      puts "The computer guessed #{computer_number}."
     end
-
+  end
+  puts "Goodbye!"
 end
